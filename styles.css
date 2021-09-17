@@ -1,0 +1,116 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: #00002C;
+    background-size: cover;
+  }
+  
+  .wrap {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .profile {
+    text-align: center;
+    color: #D9ECF2;
+    font-size: 25px;
+  }
+  .photo {
+    margin-top: 40px;
+    border-radius: 50%;
+  }
+  .profile_name {
+    margin-top: 15px;
+    font-weight: bold;
+    display: block;
+  }
+  .at {
+    font-size: 13px;
+  }
+  .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .links ul li {
+    margin: 14px 0;
+  }
+  .link {
+    padding: 14px;
+    display: block;
+    background-color: #2FB898;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: ease all 1.0s;
+    font-weight: bold;
+    color: rgb(10, 1, 1);
+  }
+  .link:hover {
+    opacity: 0.6;
+  }
+
+p{
+  text-align: center;
+color: #D9ECF2;
+}
+
+
+.skills{
+  width: 100%;
+  max-width:400px;
+  padding: 0 0px;
+}
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.section-title h1{
+  display: inline-block;
+  font-size: 15 px;
+  font-weight: 700;
+  color: #A6ADB4;
+  margin: 0 20px 0px;
+  position: relative;
+}
+.section-title h1:before{
+  content: '';
+  left: 0;
+  position: absolute;
+  font-size: 19px;
+  height: 2px;
+  right: 32%;
+  background-color: #50c5fc;
+  bottom: 0px;
+}
+
+.skills .section-title h1:before{
+  left: 30%;
+}
+.text-center{
+  text-align: center;
+}
+.skill-name{
+  font-size: 10px;
+  font-weight: 700;
+  color: #A6ADB4;
+  margin: 10px 0;
+}
+.skill-bar{
+  height: 8px;
+  background: #A6ADB4;
+  border-radius: 8px;
+
+}
+.skill-per{
+  height: 8px;
+  background-color: #DEA040;
+  border-radius: 8px;
+  width: 0;
+  transition: 1s linear;
+  position: relative;
+}
+

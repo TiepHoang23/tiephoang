@@ -1,0 +1,87 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+        <title>TiepHoang </title>
+
+    </head>
+    <body>
+        
+        <!-- Profile picture-->
+        <div class="wrap">
+            <div class="profile">
+              <img src="assets/avatar.jpg "width="130" height="130" class="photo">
+              <span class="profile_name">HOÀNG VĂN TIỆP</span>
+              <span class="at">IT & Art</span>
+            </div>
+            <!--skill-->
+            <div class="skills">
+
+        
+                <div class="skill">
+                    <div class="skill-name">Photoshop</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="95"></div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <div class="skill-name">HTML & CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="85"></div>
+                    </div>
+                </div>
+        
+        
+                <div class="skill">
+                    <div class="skill-name">Illustrator</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="87"></div>
+                    </div>
+                </div>
+        
+        
+            </div>
+            <script>
+                $('.skill-per').each(function () {
+                    var $this = $(this);
+                    var per = $this.attr('per');
+                    $this.css("width", per + '%');
+                    $({ animatedValue: 0 }).animate({ animatedValue: per }, {
+                        duration: 1000,
+                        step: function () {
+                            $this.attr('per', Math.floor(this.animatedValue) + '%');
+        
+                        },
+                        complete: function () {
+                            $this.attr('per', Math.floor(this.animatedValue) + '%');
+        
+                        }
+        
+                    });
+                });
+            </script>
+            <!-- link-->
+          
+            
+            <div class="links">
+               
+              <ul>
+                <li><a href="#" class="link"><i class="material-icons" style="font-size:20px;">portrait</i> Portfolio</a></li>
+                <li><a href="https://www.facebook.com/tiephoang23" class="link"><i class="material-icons" style="font-size:20px;">facebook</i> Facebook</a></li>
+                <li><a href="mailto:tiephoang1912@gmail.com" class="link"><i class="material-icons" style="font-size:20px;">email</i> Send Email </a></li>
+                <li><a href="tel:0389256709" class="link"><i class="material-icons" style="font-size:20px;">phone</i> Phone Number</a></li> 
+              </ul>
+            </div>
+            <div class ="footer" >
+              <p><i class="material-icons" style="font-size:20px;">room</i> TP Ho Chi Minh,Viet Nam</p>
+              
+            </div>
+          </div>
+    </body>
+
+</html>
